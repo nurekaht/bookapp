@@ -31,5 +31,21 @@ class DatabaseSeeder extends Seeder
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
+
+        DB::table('author')->insert([
+            'name' => 'H. G Wells',
+            'gender' => 'male',
+            'biography' => 'H. G Wells merupakan penulis yang terkenal',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
+
+        DB::table('author')->insert([
+            'name' => 'Mira Alzahra',
+            'gender' => 'female',
+            'biography' => 'Senja merupakan nama pena yang dimiliki oleh sebuah penulis bernama asli Mira Alzahra.',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
     }
 }
