@@ -21,3 +21,12 @@ $router->get('/', function () use ($router) {
 
 $router->get('books', 'BooksController@index');
 $router->get('/books/{id}', 'BooksController@id');
+$router->post('books', 'BooksController@store');
+$router->put('books/{id}', 'BooksController@update');
+$router->delete('books/{id}', 'BooksController@destroy');
+
+$router->get('authors', 'AuthorController@index');
+$router->get('authors/{id}', 'AuthorController@id');
+$router->post('authors', 'AuthorController@store');
+$router->put('authors/{id}', 'AuthorController@update');
+$router->delete('authors/{id}', 'AuthorController@destroy');
